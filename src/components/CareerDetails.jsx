@@ -1,7 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom"
 
 export const careerDetailsLoader = async ({ params }) => {
-  let res = await fetch(`http://localhost:4000/careers/${params.id}`)
+  let res = await fetch(`https://mockend.com/HafizulHaque/mockend-fake-server/careers/${params.id}`)
 
   if(!res.ok){
     throw new Error('Career you looking for is not found')

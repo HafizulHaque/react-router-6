@@ -2,7 +2,7 @@ import { Link, useLoaderData } from "react-router-dom";
 
 //loader function
 export const careersLoader = async () => {
-  let res = await fetch('http://localhost:4000/careers');
+  let res = await fetch('https://mockend.com/HafizulHaque/mockend-fake-server/careers');
 
   if(!res.ok){
     throw new Error('Could not fetch careers from server');
